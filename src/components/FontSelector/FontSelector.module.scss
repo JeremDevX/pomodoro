@@ -1,0 +1,32 @@
+.fonts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fontsContainer {
+  display: flex;
+
+  gap: 1rem;
+}
+
+.title {
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  background-color: var(--light-gray);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 700;
+
+  &:hover {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+}

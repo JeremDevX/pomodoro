@@ -8,7 +8,6 @@
   height: 410px;
   border-radius: 50%;
   box-shadow: 0 0 32px var(--light-gray);
-  cursor: pointer;
 }
 
 .progress {
@@ -24,4 +23,5 @@
   color: var(--foreground);
   font-size: 1rem;
   letter-spacing: 0.75rem;
+  cursor: pointer;
 }
