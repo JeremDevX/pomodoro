@@ -1,15 +1,28 @@
 :root {
-  --background: #161932;
+  --background: #1e213f;
   --foreground: #fff;
   --red: #f87070;
   --blue: #70f3f8;
   --violet: #d881f8;
   --blue-gray: #d7e0ff;
-  --dark-blue: #1e213f;
+  --dark-blue: #161932;
   --light-gray: #eff1fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
+  font-family: var(--font-kumbh-sans);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
