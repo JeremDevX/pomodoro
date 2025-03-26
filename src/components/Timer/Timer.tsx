@@ -2,6 +2,9 @@
 import { useEffect, useState } from "react";
 import styles from "./Timer.module.scss";
 import { useTimerStore } from "@/stores/useTimerSettings";
+import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
+
 export default function Timer() {
   const [play, setPlay] = useState<boolean>(false);
   const [elapsed, setElapsed] = useState(0);
@@ -50,7 +53,7 @@ export default function Timer() {
 
   return (
     <div className={styles.timer}>
-      <div className={styles.progress} />
+      <div className={styles.outerCircle} />
       <p className={styles.time}>
         {Math.floor((duration - elapsed) / 60)}:
         {((duration - elapsed) % 60).toString().padStart(2, "0")}
@@ -64,6 +67,21 @@ export default function Timer() {
           {play ? "PAUSE" : "PLAY"}
         </button>
       )}
+      <button
+        className={`${styles.button} ${styles.reset}`}
+        onClick={handleReset}
+      >
+        RESET
+      </button>
+      <CircularProgressbar
+        value={(elapsed / duration) * 100}
+        strokeWidth={4}
+        className={styles.progress}
+        styles={buildStyles({
+          trailColor: "var(--background)",
+          pathColor: "var(--primary-color)",
+        })}
+      />
     </div>
   );
 }

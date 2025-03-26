@@ -10,7 +10,9 @@ export default function TimerTabs() {
       <button
         className={styles.button}
         style={
-          currentMode === "pomodoro" ? { backgroundColor: "var(--red)" } : {}
+          currentMode === "pomodoro"
+            ? { backgroundColor: "var(--primary-color)" }
+            : {}
         }
         onClick={() => setMode("pomodoro")}
       >
@@ -19,7 +21,9 @@ export default function TimerTabs() {
       <button
         className={styles.button}
         style={
-          currentMode === "shortBreak" ? { backgroundColor: "var(--red)" } : {}
+          currentMode === "shortBreak"
+            ? { backgroundColor: "var(--primary-color)" }
+            : {}
         }
         onClick={() => setMode("shortBreak")}
       >
@@ -28,7 +32,9 @@ export default function TimerTabs() {
       <button
         className={styles.button}
         style={
-          currentMode === "longBreak" ? { backgroundColor: "var(--red)" } : {}
+          currentMode === "longBreak"
+            ? { backgroundColor: "var(--primary-color)" }
+            : {}
         }
         onClick={() => setMode("longBreak")}
       >

@@ -27,3 +27,15 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
+
+.color-red {
+  --primary-color: var(--red);
+}
+
+.color-blue {
+  --primary-color: var(--blue);
+}
+
+.color-violet {
+  --primary-color: var(--violet);
+}
