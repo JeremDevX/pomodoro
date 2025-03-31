@@ -11,6 +11,7 @@ export default function ColorSetting() {
     body.classList.remove("color-red", "color-blue", "color-violet");
     body.classList.add(`color-${currentColor}`);
   }, [currentColor]);
+
   return (
     <div className={styles.colors}>
       <p className={styles.title}>COLOR</p>
