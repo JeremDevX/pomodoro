@@ -1,0 +1,6 @@
+{
+  "description": {
+    "fr": "<h2>Simple Pomodoro</h2> <h3>Description</h3> <p>Timer pomodoro basique, où l'utilisateur peut personnaliser les durées, les polices et la couleur. Un anneau de progression indique la progression actuelle du timer.</p>\n<h3>Fonctionnalités principales :</h3>\n<ul>\n<li>Définir un temps pour le pomodoro, les pauses courtes et longues</li>\n<li>Voir la progression circulaire du timer, qui se met à jour en temps réel</li>\n<li>Customiser l'apparence du timer</li>\n\n</ul>\n<h3>Technologies utilisées :</h3>\n<ul>\n<li>HTML 5</li> <li>Flexbox</li> <li>TailwindCSS</li> <li>React(Next.js)</li> <li>Zustand</li>\n\n</ul>",
+    "en": "<h2>Simple Pomodoro</h2>\n<h3>Description</h3> <p>Basic pomodoro timer, where the user can customize durations, fonts and color. A progress ring indicates the current progress of the timer.</p>\n<h3>Key features:</h3>\n<ul>\n<li>Define a time for pomodoro, short and long breaks</li>\n<li>See the timer's circular progression, updated in real time.</li>\n<li>Customize timer appearance</li>\n</ul>\n<h3>Built with :</h3>\n<ul>\n\n  <li>HTML 5</li>\n<li>Flexbox</li> <li>TailwindCSS</li> <li>React(Next.js)</li> <li>Zustand</li>\n\n</ul>"
+  }
+}
