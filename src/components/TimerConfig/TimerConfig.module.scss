@@ -14,6 +14,7 @@
   background-color: var(--foreground);
   color: var(--background);
   padding: 2rem;
+  z-index: 50;
 
   & > *:not(:last-child) {
     border-bottom: 1px solid var(--blue-gray);
@@ -23,6 +24,11 @@
   & > *:first-child {
     padding: 0;
     border-bottom: none;
+  }
+
+  @media (max-width: 767px) {
+    width: 90%;
+    height: auto;
   }
 }
 

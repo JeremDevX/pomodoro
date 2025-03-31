@@ -7,6 +7,15 @@
   height: 60px;
   padding: 0.25rem;
   border-radius: 32px;
+
+  @media (max-width: 424px) {
+    flex-direction: column;
+    justify-content: center;
+
+    width: 150px;
+    height: auto;
+    padding: 0.5rem;
+  }
 }
 
 .button {
